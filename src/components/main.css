@@ -10,3 +10,18 @@ body, html {
 	color: white;
 }
 
+.input-group {
+	margin: 25px auto;
+	width: 70%;
+}
+
+.list {
+	position: relative;
+	top: 70px;
+}
+
+.google-button {
+	position: relative;
+	right: 5px;
+}
+
