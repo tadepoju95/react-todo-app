@@ -19,9 +19,9 @@ class CreateTodos extends React.Component {
 			<form onSubmit={this.onSubmit} > 
 				<div className="input-group mb-3">
 	  				<input type="text" className="form-control" placeholder="Add Todo" aria-label="Recipient's username" aria-describedby="button-addon2" value={this.state.inputValue} 
-	         	    onChange={(e) => this.setState({ inputValue: e.target.value })} readOnly={!this.props.isSignedIn ? true : false} />
+	         	    onChange={(e) => this.setState({ inputValue: e.target.value })} readOnly={!this.props.isSignedIn ? true : false} name="eachTodo" required />
 	  				<div className="input-group-append">
-	    				<button className="btn btn-outline-secondary" type="button" id="button-addon2" disabled={!this.props.isSignedIn ? true : false} >Add</button>
+	    				<button className="btn btn-outline-secondary" type="submit" id="button-addon2" disabled={!this.props.isSignedIn ? true : false} >Add</button>
 	 				</div>
 				</div>
 			</form>
