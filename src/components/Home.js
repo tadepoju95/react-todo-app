@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import{ fetchTodos } from '../actions';
 import { Container } from 'react-bootstrap'
 import CreateTodos from './CreateTodos';
+import ListOfTodos from './ListOfTodos';
 
 
 
@@ -36,6 +37,7 @@ class Home extends React.Component {
 		return (
 			<div>
 				<CreateTodos />
+				<ListOfTodos />
 				<div>{this.renderList()}</div>
 			</div>
 		)

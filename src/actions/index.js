@@ -24,7 +24,7 @@ export const fetchTodos = () => async dispatch => {
 
 export const createTodo = inputValue => async (dispatch, getState) => {
   const { userId } = getState().auth;
-  const response = await todoList.post('/todoList', { ...inputValue, userId });
+  const response = await todoList.post('/todoList', { inputValue, userId });
 
   dispatch({ type: 'CREATE_TODO', payload: response.data });
 };
