@@ -1,6 +1,6 @@
 import React from 'react';
 import './main.css';
-import { Container, Row, Col, Nav, Jumbotron } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import GoogleAuth from './GoogleAuth';
 
 

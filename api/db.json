@@ -3,22 +3,26 @@
     {
       "inputValue": "make a to do list ",
       "userId": "106827563549481231909",
-      "id": 1
+      "id": 1,
+      "make a to do list ": ""
     },
     {
       "inputValue": "have a quiet time ",
       "userId": "106827563549481231909",
-      "id": 2
+      "id": 2,
+      "have a quiet time ": ""
     },
     {
       "inputValue": "go grocery shopping ",
       "userId": "106827563549481231909",
-      "id": 3
+      "id": 3,
+      "go grocery shopping ": ""
     },
     {
       "inputValue": "pray and dance",
       "userId": "106827563549481231909",
-      "id": 4
+      "id": 4,
+      "pray and dance": ""
     }
   ]
 }
