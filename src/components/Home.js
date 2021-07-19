@@ -6,7 +6,6 @@ import CreateTodos from './CreateTodos';
 import ListOfTodos from './ListOfTodos';
 
 
-
 class Home extends React.Component {
 
 	componentDidMount() {

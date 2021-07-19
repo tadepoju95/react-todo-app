@@ -4,25 +4,25 @@
       "inputValue": "make a to do list ",
       "userId": "106827563549481231909",
       "id": 1,
-      "make a to do list ": ""
+      "make a to do list ": "",
+      "make a to do list today": "",
+      "make a to do list fast": "",
+      "make a to do lis": ""
     },
     {
-      "inputValue": "have a quiet time ",
+      "inputValue": "go shopping",
       "userId": "106827563549481231909",
-      "id": 2,
-      "have a quiet time ": ""
+      "id": 2
     },
     {
-      "inputValue": "go grocery shopping ",
+      "inputValue": "go for a run",
       "userId": "106827563549481231909",
-      "id": 3,
-      "go grocery shopping ": ""
+      "id": 3
     },
     {
-      "inputValue": "pray and dance",
+      "inputValue": "quiet time",
       "userId": "106827563549481231909",
-      "id": 4,
-      "pray and dance": ""
+      "id": 4
     }
   ]
 }
