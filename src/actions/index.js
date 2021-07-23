@@ -42,7 +42,7 @@ export const fetchTodo = id => async dispatch => {
 };
 
 export const editTodo = (id, inputValue) => async dispatch => {
-  const response = await todoList.patch(`/todoList/${id}`, inputValue);
+  const response = await todoList.patch(`/todoList/${id}`, { inputValue: inputValue });
 
   dispatch({ type: 'EDIT_TODO', payload: response.data });
 };

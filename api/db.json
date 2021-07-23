@@ -1,28 +1,14 @@
 {
   "todoList": [
     {
-      "inputValue": "make a to do list ",
+      "inputValue": "go shopping today",
       "userId": "106827563549481231909",
-      "id": 1,
-      "make a to do list ": "",
-      "make a to do list today": "",
-      "make a to do list fast": "",
-      "make a to do lis": ""
+      "id": 6
     },
     {
-      "inputValue": "go shopping",
+      "inputValue": "make a to do list today",
       "userId": "106827563549481231909",
-      "id": 2
-    },
-    {
-      "inputValue": "go for a run",
-      "userId": "106827563549481231909",
-      "id": 3
-    },
-    {
-      "inputValue": "quiet time",
-      "userId": "106827563549481231909",
-      "id": 4
+      "id": 8
     }
   ]
 }

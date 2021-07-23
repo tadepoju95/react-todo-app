@@ -15,7 +15,7 @@ class ListOfTodos extends React.Component {
 		if (this.props.isSignedIn) {
 		return this.props.allTodos.map((eachTodo, index) => {
 			return (
-				<ListItem key={index} todoItem={eachTodo.inputValue} index={index} id={eachTodo.id} />
+				<ListItem key={eachTodo.id} todoItem={eachTodo.inputValue} index={index} id={eachTodo.id} />
 			);
 		});
 	}

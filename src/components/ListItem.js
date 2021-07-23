@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap'
-import{ editTodo } from '../actions';
+import{ editTodo, deleteTodo } from '../actions';
 
 
 class ListItem extends React.Component {
@@ -16,18 +16,24 @@ class ListItem extends React.Component {
   	}
 
   	handleUpdatedTodo = inputValue => {
-    	this.props.editTodo(this.props.id, this.state.value);
+  		if(this.props.todoItem !== this.state.value) {
+    		this.props.editTodo(this.props.id, this.state.value);
+    	}
  	};
+
+ 	handleDeletedTodo = id => {
+ 		this.props.deleteTodo(this.props.id);
+ 	}
   	
 	renderList () {
 			return (
-				<Container key={this.props.id}>
+				<Container>
 					<div className="input-group mb-3 list">
   						<input type="text" className="form-control" value={this.state.value} onChange={this.handleChange} aria-label="Recipient's username" aria-describedby="button-addon2" readOnly={this.state.removeReadOnly} />
   						<div className="input-group-append">
     						<button className="btn btn-outline-secondary" type="button" id="button-addon2"  onClick={() => this.handleReadOnly()}>Edit</button>
-    						<button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={() => this.handleUpdatedTodo()}>Update</button>
-    						<button className="btn btn-outline-secondary" type="button" id="button-addon2">Delete</button>
+    						<button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={() => {this.handleUpdatedTodo(); this.handleReadOnly()}}>Update</button>
+    						<button className="btn btn-outline-secondary" type="button" id="button-addon2" onClick={() => this.handleDeletedTodo()}>Delete</button>
  						</div>
 					</div>
 				</Container>
@@ -45,7 +51,7 @@ class ListItem extends React.Component {
 }
 
 
-export default connect(null, { editTodo })(ListItem);
+export default connect(null, { editTodo, deleteTodo })(ListItem);
 
 
 
