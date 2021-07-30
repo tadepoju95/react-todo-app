@@ -15,6 +15,12 @@ export const signOut = () => {
   };
 };
 
+export const resetStore = () => {
+	return {
+		type: 'RESET_STORE'
+	};
+};
+
 
 export const fetchTodos = () => async dispatch => {
 	const response = await todosApi.get('/todos?_limit=5');
