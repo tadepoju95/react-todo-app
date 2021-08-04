@@ -13,7 +13,9 @@ class ListOfTodos extends React.Component {
   	
 	renderList () {
 		if (this.props.isSignedIn) {
-		return this.props.allTodos.map((eachTodo, index) => {
+		return this.props.allTodos.filter((eachTodo) => {
+			return this.props.userId === eachTodo.userId 
+		}).map((eachTodo, index) => {
 			return (
 				<ListItem key={eachTodo.id} todoItem={eachTodo.inputValue} index={index} id={eachTodo.id} />
 			);
@@ -35,7 +37,8 @@ class ListOfTodos extends React.Component {
 const mapStateToProps = state => {
 	return { 
 		allTodos: Object.values(state.allTodos),
-		isSignedIn: state.auth.isSignedIn
+		isSignedIn: state.auth.isSignedIn,
+		userId: state.auth.userId
 	 };
 }
 

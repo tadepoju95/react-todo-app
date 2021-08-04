@@ -1,3 +1,29 @@
 {
-  "todoList": []
+  "todoList": [
+    {
+      "inputValue": "make a to do list today",
+      "userId": "106827563549481231909",
+      "id": 1
+    },
+    {
+      "inputValue": "I think it is finally working today",
+      "userId": "108568555620651038143",
+      "id": 4
+    },
+    {
+      "inputValue": "amen amen amen",
+      "userId": "108568555620651038143",
+      "id": 5
+    },
+    {
+      "inputValue": "make a to do list ",
+      "userId": "108568555620651038143",
+      "id": 6
+    },
+    {
+      "inputValue": "go shopping at 5pm ",
+      "userId": "106827563549481231909",
+      "id": 7
+    }
+  ]
 }

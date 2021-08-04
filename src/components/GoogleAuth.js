@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { signIn, signOut, resetStore } from '../actions';
+import { signIn, signOut } from '../actions';
 import { GrGoogle } from 'react-icons/gr';
 
 
@@ -25,7 +25,6 @@ class GoogleAuth extends React.Component {
       this.props.signIn(this.auth.currentUser.get().getId());
     } else {
       this.props.signOut();
-      this.props.resetStore();
     }
   };
 
@@ -68,5 +67,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { signIn, signOut, resetStore  }
+  { signIn, signOut }
 )(GoogleAuth);

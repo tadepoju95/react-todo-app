@@ -15,11 +15,6 @@ export const signOut = () => {
   };
 };
 
-export const resetStore = () => {
-	return {
-		type: 'RESET_STORE'
-	};
-};
 
 
 export const fetchTodos = () => async dispatch => {
