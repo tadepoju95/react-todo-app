@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Container } from 'react-bootstrap'
-import{ editTodo, deleteTodo } from '../actions';
+import{ editTodo, deleteTodo } from '../../actions';
 
 
 class ListItem extends React.Component {

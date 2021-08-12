@@ -2,8 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import{ fetchTodos } from '../actions';
 import { Container } from 'react-bootstrap'
-import CreateTodos from './CreateTodos';
-import ListOfTodos from './ListOfTodos';
+import CreateTodos from './todos/CreateTodos';
+import ListOfTodos from './todos/ListOfTodos';
 
 
 class Home extends React.Component {
@@ -18,11 +18,11 @@ class Home extends React.Component {
 			return (
 				<Container key={todo.id}>
 					<div className="input-group mb-3 list">
-  						<input type="text" className="form-control" placeholder={todo.title} aria-label="Recipient's username" aria-describedby="button-addon2" />
+  						<input type="text" className="form-control" placeholder={todo.title} aria-label="Recipient's username" aria-describedby="button-addon2" readOnly={true} />
   						<div className="input-group-append">
-    						<button className="btn btn-outline-secondary" type="button" id="button-addon2">Edit</button>
-    						<button className="btn btn-outline-secondary" type="button" id="button-addon2">Update</button>
-    						<button className="btn btn-outline-secondary" type="button" id="button-addon2">Delete</button>
+    						<button className="btn btn-outline-secondary" type="button" id="button-addon2" disabled={true}>Edit</button>
+    						<button className="btn btn-outline-secondary" type="button" id="button-addon2" disabled={true}>Update</button>
+    						<button className="btn btn-outline-secondary" type="button" id="button-addon2" disabled={true}>Delete</button>
  						</div>
 					</div>
 				</Container>
