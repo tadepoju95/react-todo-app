@@ -12,7 +12,7 @@ Project was built using React and Redux. Used Google OAuth for the sign in funct
 
 • Make sure to otain OAuth 2.0 credentials from the Google API Console
 
-• Then clone the app onto your local machine.
+• Then, clone the app onto your local machine.
 
 • In your terminal, type npm install (installs the required dependencies).
 
